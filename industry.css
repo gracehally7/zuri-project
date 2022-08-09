@@ -26,7 +26,8 @@ nav{
     justify-content: space-evenly;
     background-color: #fff;
     width: 100%; 
-    box-shadow: grey;
+    z-index: 1000;
+    box-shadow: 1px 2px 4px 1px rgb(0, 0, 0, .5%);
     position: fixed;
     padding:1rem;
     align-items: center;
@@ -462,7 +463,14 @@ span{
     margin:100px;
     justify-content: space-between;
 }
-
+@media(max-width:1200px){
+    .grid-items{
+        grid-template-columns:1fr 1fr;
+    }
+    .section3{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media(max-width:768px){
     html{
         font-size: 55%;
