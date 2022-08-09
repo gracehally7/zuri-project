@@ -1,10 +1,7 @@
-let menu = document.querySelector("#plus");
-let paragraph= document.querySelector('items');
+let items= document.querySelector('.fa-plus');
+let paragraph= document.querySelector('.items_span');
 
 //add event listener
-menu.onclick = {} =>{
-    menu.classList.toggle('items_span')
-
-   
-    }
-    menu.classList.remove('items_span')
+items.addEventListener('click', {} => {
+    paragraph.classList.toggle('.active')
+  });
